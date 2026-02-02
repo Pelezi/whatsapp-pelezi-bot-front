@@ -1,4 +1,5 @@
 import Providers from '@/components/Providers';
+import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration';
 import './globals.css';
 
 export const metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({
           }}
         />
         <Providers>
+          <ServiceWorkerRegistration />
           {children}
         </Providers>
       </body>

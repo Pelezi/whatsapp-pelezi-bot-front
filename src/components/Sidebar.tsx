@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { MessageSquare, Menu, X, Moon, Sun, FolderKanban } from 'lucide-react';
+import { MessageSquare, Menu, X, Moon, Sun, FolderKanban, Settings } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useCallback } from 'react';
@@ -58,6 +58,7 @@ export default function Sidebar() {
   const navItems: NavItem[] = [
     { href: '/chat', label: 'Chat', icon: <MessageSquare size={18} />, matchPrefix: false },
     { href: '/projects', label: 'Projects', icon: <FolderKanban size={18} />, matchPrefix: false },
+    { href: '/settings', label: 'Configurações', icon: <Settings size={18} />, matchPrefix: false },
   ];
 
   return (
